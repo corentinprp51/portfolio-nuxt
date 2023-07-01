@@ -1,7 +1,7 @@
 import { Ref } from 'vue'
 
 export const useObserver = (element: Ref<HTMLElement | null>) => {
-  const className = ref('opacity-0 translate-y-[50%]')
+  const className = ref('opacity-0')
   onMounted(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

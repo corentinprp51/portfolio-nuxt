@@ -2,7 +2,7 @@
   <div
     ref="hidden"
     :class="className"
-    class="skills-list px-4 py-16 transition-all duration-1000 sm:px-32 flex flex-col md:flex md:flex-row md:flex-wrap md:justify-center md:space-x-10"
+    class="skills-list px-4 py-16 transition-all duration-500 sm:px-32 flex flex-col md:flex md:flex-row md:flex-wrap md:justify-center md:space-x-10"
   >
     <SkillCard
       title="Front-End"

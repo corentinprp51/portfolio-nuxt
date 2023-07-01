@@ -3,6 +3,7 @@
     v-model="modelValue"
     placeholder="Your message..."
     class="bg-black p-4 bg-transparent outline-none focus:outline-none shadow-lg rounded-lg border border-transparent focus:border-black dark:focus:border-[#6893FF]"
+    style="-webkit-appearance: none"
   />
 </template>
 
