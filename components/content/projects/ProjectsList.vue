@@ -1,7 +1,6 @@
 <template>
   <div
     ref="hidden"
-    :class="className"
     class="projects-list transition-all duration-1000 px-4 py-16 sm:px-32 flex flex-col md:flex md:flex-row md:flex-wrap md:justify-center md:space-x-10"
   >
     <ProjectCard
@@ -132,5 +131,5 @@ import { useObserver } from '~/composables/useObserver'
 import VueJSIcon from '~/components/icons/VueJSIcon.vue'
 
 const hidden = ref(null)
-const { className } = useObserver(hidden)
+useObserver(hidden)
 </script>

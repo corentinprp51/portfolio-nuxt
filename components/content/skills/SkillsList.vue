@@ -1,8 +1,7 @@
 <template>
   <div
     ref="hidden"
-    :class="className"
-    class="skills-list px-4 py-16 transition-all duration-500 sm:px-32 flex flex-col md:flex md:flex-row md:flex-wrap md:justify-center md:space-x-10"
+    class="skills-list px-4 py-16 sm:px-32 flex flex-col md:flex md:flex-row md:flex-wrap md:justify-center md:space-x-10"
   >
     <SkillCard
       title="Front-End"
@@ -63,7 +62,7 @@
     </SkillCard>
     <SkillCard
       title="Others"
-      class="mt-8 md:mt-0 md:flex-grow md:flex-shrink md:basis-[0px]"
+      class="mt-[50vh] md:mt-0 md:flex-grow md:flex-shrink md:basis-[0px]"
     >
       <GoogleCloud class="w-32" />
       <GitLogo class="w-20" />
@@ -95,5 +94,5 @@ import { useObserver } from '~/composables/useObserver'
 import VueJSIcon from '~/components/icons/VueJSIcon.vue'
 
 const hidden = ref<HTMLElement | null>(null)
-const { className } = useObserver(hidden)
+useObserver(hidden)
 </script>

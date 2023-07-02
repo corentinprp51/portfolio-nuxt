@@ -1,21 +1,21 @@
 import { Ref } from 'vue'
 
 export const useObserver = (element: Ref<HTMLElement | null>) => {
-  const className = ref('opacity-0')
   onMounted(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          className.value = 'opacity-100 translate-y-0'
+          entry.target.classList.add('animate-fade-up')
         }
         // else {
         //   className.value = 'opacity-0 translate-y-[50%]'
         // }
       })
     })
-    if (element.value) observer.observe(element.value)
+    if (element.value?.children && element.value.children.length > 0) {
+      for (let i = 0; i < element.value.children.length; i++) {
+        observer.observe(element.value.children.item(i) as Element)
+      }
+    }
   })
-  return {
-    className
-  }
 }
