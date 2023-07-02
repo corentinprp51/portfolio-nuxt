@@ -5,7 +5,7 @@
   >
     <SkillCard
       title="Front-End"
-      class="md:flex-grow md:flex-shrink md:basis-[0px]"
+      class="md:flex-grow md:flex-shrink md:basis-[0px] opacity-0"
     >
       <SkillsIcon
         label="Vue.js"
@@ -36,7 +36,7 @@
     </SkillCard>
     <SkillCard
       title="Back-End"
-      class="mt-8 md:mt-0 md:flex-grow md:flex-shrink md:basis-[0px]"
+      class="mt-8 md:mt-0 md:flex-grow md:flex-shrink md:basis-[0px] opacity-0"
     >
       <SkillsIcon
         label="Adonis.js"
@@ -62,7 +62,7 @@
     </SkillCard>
     <SkillCard
       title="Others"
-      class="mt-[50vh] md:mt-0 md:flex-grow md:flex-shrink md:basis-[0px]"
+      class="mt-8 md:mt-0 md:flex-grow md:flex-shrink md:basis-[0px] opacity-0"
     >
       <GoogleCloud class="w-32" />
       <GitLogo class="w-20" />
